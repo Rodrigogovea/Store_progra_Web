@@ -65,7 +65,9 @@ h3{
 }
 
 .header__logo{
-    margin: 2rem 0;
+    margin: 1rem 0;
+    height: 20rem;
+    width: 20rem;
 }
 
 .navegacion{
@@ -84,6 +86,21 @@ h3{
     text-transform: uppercase;
 }
 
-.navegacion__enlace:hover{
-    color:var(--secundario);
+.navegacion__enlace:hover,
+.navegacion__enlace--activo{
+    color:var(--primario);
+
+}
+
+.footer{
+    background-color: var(--obscuro);
+    padding: .5rem 0;
+    margin-top: 2rem;
+}
+
+.footer__parrafo{
+
+    font-family: var(--fuenteprincipal);
+    text-align: center;
+    font-size: 1rem;
 }

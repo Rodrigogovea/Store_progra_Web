@@ -5,6 +5,7 @@
     --contraste: #F2F2F2;
     --blanco: #FFFFFF;
     --obscuro: #0D0D0D;
+    --gris: #9E9E9E;
     --fuenteprincipal: 'Oxygen', sans-serif;
 }
 
@@ -119,7 +120,10 @@ h3{
 
 .producto{
     background-color: var(--contraste);
-    padding: 1rem;
+}
+
+.producto:hover{
+    box-shadow: 7px 7px 15px var(--gris); 
 }
 
 .producto__imagen{
@@ -132,7 +136,7 @@ h3{
 }
 
 .producto__descripcion{
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: var(--obscuro)
 }
 

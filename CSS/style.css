@@ -78,6 +78,7 @@ h3{
     display: flex;
     justify-content: center;
     gap: 2rem;
+    
 }
 
 .navegacion__enlace{
@@ -120,6 +121,8 @@ h3{
 
 .producto{
     background-color: var(--contraste);
+    border-radius: 10px 10px 10px 10px;
+
 }
 
 .producto:hover{

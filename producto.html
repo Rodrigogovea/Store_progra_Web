@@ -17,14 +17,30 @@
         </header>
         <!--bloque-->
         <nav class="navegacion">
-            <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Inicio</a>
+            <a class="navegacion__enlace" href="index.html">Inicio</a>
             <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
         </nav>
 
         <main class="contenedor">
             <h1>Vista general</h1>
 
-            <div></div>
+            <div class="vistageneral">
+                <img class="vistageneral__imagen" src="IMG/01_big.jpg" alt="Vista general de la imágen">
+                <div class="vistageneral__descripcion">
+                    <p class="vistageneral__parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo laboriosam obcaecati aliquid quae, aspernatur fugiat excepturi delectus soluta error, deleniti porro optio hic corrupti! Quos ipsam corporis minus optio.</p>
+                    <form class="formulario">
+                        <select class=formulario__campo>
+                            <option selected disabled>Selecciona tu talla</option>
+                            <option>Chica</option>
+                            <option>Mediana</option>
+                            <option>Grande</option>
+                        </select>
+                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="0">
+                        <input class="formulario__boton" type="submit" value="Agregar al carrito">
+                    </form>
+                    
+                </div>
+            </div>
         </main>
 
         <footer class="footer">

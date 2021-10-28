@@ -22,22 +22,27 @@
             <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
         </nav>
 
-        <main class="contenedor">
+        <main class="contenedor"> <!--le agregamos la clase contenedor para que tenga el mismo tamaño que las otras páginas, 1200px-->
             <h1>Vista general</h1>
 
-            <div class="vistageneral">
-                <img class="vistageneral__imagen" src="IMG/01_big.jpg" alt="Vista general de la imágen">
-                <div class="vistageneral__descripcion">
-                    <p class="vistageneral__parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quo laboriosam obcaecati aliquid quae, aspernatur fugiat excepturi delectus soluta error, deleniti porro optio hic corrupti! Quos ipsam corporis minus optio.</p>
-                    <form class="formulario">
-                        <select class=formulario__campo>
-                            <option selected disabled>Selecciona tu talla</option>
-                            <option>Chica</option>
-                            <option>Mediana</option>
+            <div class="vistageneral"> <!--Agregué una clase en este caso este div, es mi contenedor general, (sería la "tarjeta")-->
+                <img class="vistageneral__imagen" src="IMG/01_big.jpg" alt="Vista general de la imágen"> <!--Siguiendo el mismo patrón de la tarjeta, sería la imagen-->
+                <div class="vistageneral__descripcion"> <!--Y luego agregamos la descripción de la imágen, en este caso lo agregue en un contenedor adicional, porque le daré una presentación diferente a las tarjetas-->
+                    <p class="vistageneral__parrafo">Lorem, ipsum dolor sit amet consectetur 
+                        adipisicing elit. Quasi quo laboriosam obcaecati aliquid quae, aspernatur 
+                        fugiat excepturi delectus soluta error, deleniti porro optio hic corrupti! 
+                        Quos ipsam corporis minus optio.
+                    </p> <!--Se agregó la descripción-->
+                    <form class="formulario"><!--agregamos un formulario, en caso de que se requiera hacer  la estructura de una tienda como tal-->
+                        <!--En mi proyecto no aplicarán estos elementos, pero tal vez en el de ustedes sí!-->
+                        <select class=formulario__campo> <!--el elemento <select> me sirve para simular una lista de opciones-->
+                            <option selected disabled>Selecciona tu talla</option> <!--el elemento option, selected para que sea la primera que aparezca en la lista, disabled para que el usuario no pueda selecionar esa opción-->
+                            <option>Chica</option> <!--opciones que si puede seleccionar el usuario-->
+                            <option>Mediana</option> 
                             <option>Grande</option>
                         </select>
-                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="0">
-                        <input class="formulario__boton" type="submit" value="Agregar al carrito">
+                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="0"> <!--tenemos un input de tipo number, y le agregamos un min, para que no tenga valores negativos-->
+                        <input class="formulario__boton" type="submit" value="Agregar al carrito"> <!--agregamos un botón-->
                     </form>
                     
                 </div>

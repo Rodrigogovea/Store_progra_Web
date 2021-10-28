@@ -6,7 +6,7 @@
     --blanco: #FFFFFF;
     --obscuro: #0D0D0D;
     --gris: #9E9E9E;
-    --resaltar: #06A0D6;
+    --resaltar: #06A0D6; /*sea grego este color, solo para probar con el botón en el evento hover, pero me agrado más que quedará con fondo blanco y el hover con color primario*/
     --fuenteprincipal: 'Oxygen', sans-serif;
 }
 
@@ -62,6 +62,8 @@ h3{
     font-size: 2rem;
 }
 
+/*bloque header*/
+
 .header{
     display: flex;
     justify-content: center;
@@ -72,6 +74,8 @@ h3{
     height: 15rem;
     width: 15rem;
 }
+
+/*bloque navegacion*/
 
 .navegacion{
     background-color: var(--obscuro);
@@ -95,6 +99,8 @@ h3{
     color:var(--primario);
 }
 
+/*bloque footer*/
+
 .footer{
     background-color: var(--obscuro);
     padding: .5rem 0;
@@ -107,11 +113,14 @@ h3{
     font-size: 1rem;
 }
 
+/*sección contenido general página principal o index*/
+
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /*el repeat, es lo equivalente a poner 1fr 1fr, repeat es una función que recibe (numero de columnas, tamaño)*/
     column-gap: 2rem;
     row-gap: 2rem;
+    /*podemos ahorrarnos las dos líneas anteriores usando solo gap: 2rem;*/
 }
 
 @media (min-width: 768px) {
@@ -132,7 +141,9 @@ h3{
 
 
 .producto__imagen{
-    width: 100%;
+    width: 400px;
+    height: 300px;
+
 }
 
 .producto__nombre{
@@ -152,7 +163,7 @@ h3{
     text-align: center;
 }
 
-/*nosotros*/
+/*sección nosotros*/
 
 .nosotros{
     display: grid;
@@ -167,14 +178,14 @@ h3{
 }
 
 .nosotros__imagen{
-    grid-row: 1 / 2;
+    grid-row: 1 / 2; /*el grid-row se utiliza para posicionar elementos, en este caso en las filas*/
     width: 100%;
 
 }
 
 @media (min-width: 768px){
     .nosotros__imagen{
-        grid-column: 2 / 3;
+        grid-column: 2 / 3; /*el grid-column se utiliza para posicionar elementos, en este caso en las columnas*/
     
     }
 }
@@ -211,7 +222,7 @@ h3{
 }
 
 
-/*seccción vista general de producto*/
+/*Sección para vista general de producto*/
 
 
 
@@ -231,13 +242,13 @@ h3{
     }
 }
 
-.formulario{
+.formulario{ /*Para este selector habilite la vista de grid, pero para acomodar los elementos del formulario*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
-.formulario__campo{
+.formulario__campo{ /*Deje estos valores para cada campo del formulario*/
     width: 100%;
     border: .2rem solid var(--contraste);
     background-color: transparent;
@@ -247,13 +258,13 @@ h3{
     padding: 1rem;
 }
 
-.formulario__boton{
+.formulario__boton{ /*Se agregegarón los siguientes estilos para el botón del formulario*/
     background-color: var(--blanco);
     border: none;
     font-size: 2rem;
     font-family: var(--fuenteprincipal);
     padding: 1rem;
-    transition: background-color .3s ease;
+    transition: background-color 400ms; /*al igual como hicomos en las tarjetas del producto le agregamos una transición en este caso al botón, y a la propiedad background-color*/
     grid-column: 1 / 3;
 }
 
